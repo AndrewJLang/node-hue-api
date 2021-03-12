@@ -1,5 +1,5 @@
 {
-  "name": "node-hue-api",
+  "name": "stream-node-hue-api",
   "description": "Philips Hue API Library for Node.js",
   "version": "4.0.9",
   "author": "Peter Murray <peter.murray@osirisoft.com>",
@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peter-murray/node-hue-api"
+    "url": "https://github.com/AndrewJLang/node-hue-api.git"
   },
   "bugs": {
-    "url": "https://github.com/peter-murray/node-hue-api/issues"
+    "url": "https://github.com/AndrewJLang/node-hue-api.git/issues"
   },
   "dependencies": {
     "@peter-murray/hue-bridge-model": "^1.0.0",
