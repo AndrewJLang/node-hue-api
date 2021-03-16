@@ -1,7 +1,7 @@
 {
-  "name": "stream-node-hue-api",
+  "name": "stream-lux-node-hue-api",
   "description": "Philips Hue API Library for Node.js",
-  "version": "4.0.9",
+  "version": "1.1.0",
   "author": "Peter Murray <peter.murray@osirisoft.com>",
   "contributors": [
     {
@@ -13,9 +13,7 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "mocha --timeout 5000 --recursive \"lib/api/**/*.test.js\"",
-    "clean-ts-definitions": "find . -type f -name '*.d.ts' -exec rm {} \\;",
-    "generate-ts-definitions": "npx typescript@3.8.3 index.js --allowJs --strict --declaration --emitDeclarationOnly --listEmittedFiles",
-    "prepublishOnly": "npm run generate-ts-definitions"
+    "clean-ts-definitions": "find . -type f -name '*.d.ts' -exec rm {} \\;"
   },
   "repository": {
     "type": "git",
@@ -25,15 +23,17 @@
     "url": "https://github.com/AndrewJLang/node-hue-api.git/issues"
   },
   "dependencies": {
-    "@peter-murray/hue-bridge-model": "^1.0.0",
     "bottleneck": "^2.19.5",
     "cross-fetch": "^3.0.6",
     "get-ssl-certificate": "^2.3.3",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "npx": "^10.2.2",
+    "stream-lux-hue-bridge-model": "^1.1.0"
   },
   "devDependencies": {
     "chai": "~4.2",
     "eslint": "^5.16.0",
+    "graceful-fs": "^4.2.6",
     "mocha": "^8.1.1"
   },
   "engines": {
